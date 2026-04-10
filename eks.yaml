@@ -6,13 +6,6 @@ metadata:
   region: us-east-1
 
 managedNodeGroups:
-- name: spot
-  instanceTypes:
-    - t3.large
-    - t3a.large
-    - m5.large
-    - m5a.large
-    - c5.large
-    - c6a.large
-  spot: true
+- name: workers
+  instanceType: t2.micro
   desiredCapacity: 2
